@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Proyecto Final</title>
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a style="color: white;" class="navbar-brand" href="index.html">IA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown">
+                        <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Inicio
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="resumen.html">Resumen</a></li>
+                            <li><a class="dropdown-item" href="introduccion.html">Introducción</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Metodología
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="cualitativo.html">Cualitativo</a></li>
+                            <li><a class="dropdown-item" href="cuantitativo.html">Cuantitativo</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Analisis
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="resultados.html">Resultados</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container mt-5">
+        <h1 class="text-center">Análisis del impacto de la inteligencia artificial en el aprendizaje de los estudiantes
+            del ITSQMET para estudiar la dependencia de la IA en cada nivel de la carrera Desarrollo de Software.</h1>
+
+        <div class="row mt-5 text-center">
+            <!-- Tarjeta 1 -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100">
+                    <img src="imagenes/deepseek.jpeg" class="card-img-top" alt="DeepSeek">
+                    <div class="card-body">
+                        <h5 class="card-title">DeepSeek</h5>
+                        <p class="card-text">DeepSeek es una empresa china de inteligencia artificial que desarrolla
+                            modelos de lenguaje de código abierto.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100">
+                    <img src="imagenes/Gemini-Alternatives.webp" class="card-img-top" alt="Gemini">
+                    <div class="card-body">
+                        <h5 class="card-title">Gemini</h5>
+                        <p class="card-text">Gemini es un modelo de IA multimodal de Google, diseñado para comprender y
+                            generar texto, imágenes y audio.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100">
+                    <img src="imagenes/openAI-chat-gpt-1.jpg" class="card-img-top" alt="ChatGPT">
+                    <div class="card-body">
+                        <h5 class="card-title">ChatGPT</h5>
+                        <p class="card-text">ChatGPT es un chatbot de inteligencia artificial desarrollado por OpenAI
+                            para responder preguntas de forma natural.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100">
+                    <img src="imagenes/Screenshot 2024-10-03 at 15.34.40.png" class="card-img-top" alt="GitHub Copilot">
+                    <div class="card-body">
+                        <h5 class="card-title">GitHub Copilot</h5>
+                        <p class="card-text">GitHub Copilot es un asistente de programación basado en IA que ayuda a los
+                            desarrolladores a programar más rápido.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    opacity: 1;
+    /* Reduce la opacidad para dar efecto de marca de agua */
+    pointer-events: none;
+    /* Evita que el video interfiera con la interacción del usuario */
+}
+
+.langar-regular {
+    font-family: "Langar", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar {
+    position: fixed;
+    /* Fija la navbar en la parte superior */
+    top: 0;
+    /* Asegura que esté pegada al borde superior */
+    width: 100%;
+    /* Se extiende a lo largo de la página */
+    z-index: 1030;
+    /* Se asegura de estar por encima de otros elementos */
+}
+
+#background-video1 {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+    /* Reduce la opacidad para dar efecto de marca de agua */
+    pointer-events: none;
+    /* Evita que el video interfiera con la interacción del usuario */
+}
+
+.btn {
+    border: 2px solid;
+    background-color: blue;
+    color: aliceblue;
+    text-decoration: none;
+    /* Quita el subrayado del enlace */
+    padding: 10px 20px;
+    display: inline-block;
+    /* Para que se comporte como un botón */
+    border-radius: 5px;
+    /* Bordes redondeados opcionales */
+}
+
+.btn:hover {
+    background-color: darkblue;
+    /* Cambia a un color más oscuro */
+    color: white;
+    /* Cambia el color del texto */
+    border-color: white;
+    /* Cambia el color del borde (opcional) */
+}
+
+/* General Reset */
+.container {
+    margin: 0;
+    padding: 10px;
+    height: 170vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: transparent;
+    color: white;
+    -webkit-text-stroke: 1px rgb(104, 103, 107);
+    /* Grosor y color del borde */
+    overflow: hidden;
+    text-align: center;
+}
+
+
+/* Text Box */
+#text-box {
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+}
+
+/* Words (Initial state) */
+.word {
+    opacity: 0;
+    transform: translateY(-50px);
+    display: inline-block;
+    animation: fadeInDrop 1s ease forwards;
+}
+
+/* Fade-In and Drop Animation */
+@keyframes fadeInDrop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes cambioColor {
+    0% { background-color: #ff4e50; }  /* Rojo */
+    25% { background-color: #fc913a; } /* Naranja */
+    50% { background-color: #f9d423; } /* Amarillo */
+    75% { background-color: #30c39e; } /* Verde */
+    100% { background-color: #ff4e50; } /* Vuelve al rojo */
+}
+
+body {
+    animation: cambioColor 10s infinite alternate;
+    transition: background-color 1s ease-in-out;
+}
+
+body {
+    transition: background-color 2s ease-in-out; /* Hace que el cambio de color sea suave */
+}
+
+/* Fondo con transición */
+body {
+    transition: background-color 2s ease-in-out;
+}
+
+/* Contenedor de la cuadrícula */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Estilos para cada elemento de la cuadrícula */
+.grid-item {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+/* Imágenes con efecto */
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: opacity 0.5s ease;
+}
+
+.grid-item img:hover {
+    opacity: 0.8;
+}
+
+/* Animación de entrada */
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
